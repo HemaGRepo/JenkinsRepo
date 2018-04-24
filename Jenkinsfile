@@ -16,10 +16,5 @@ pipeline {
         echo 'Completed'
       }
     }
-    stage('mail') {
-      steps {
-        mail(subject: 'Success', body: 'The build is successful', to: 'hema.g@capgemini.com')
-      }
-    }
   }
 }
